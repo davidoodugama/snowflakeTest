@@ -29,4 +29,4 @@ if submitted:
     except:
         st.write("Something went wrong")
 else:
-    st.sucess("There are no pending orders right now")
+    st.success("There are no pending orders right now")
