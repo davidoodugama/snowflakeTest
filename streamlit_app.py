@@ -33,4 +33,5 @@ else:
     st.success("There are no pending orders right now")
 
 smoothiesfroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiesfroot_response.json())
+# st.text(smoothiesfroot_response.json())
+sf_df = st.dataframe(data = smoothiesfroot_response.json(), use_container_width = True)
