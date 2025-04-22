@@ -33,4 +33,4 @@ else:
     st.success("There are no pending orders right now")
 
 smoothiesfroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiesfroot_response)
+st.text(smoothiesfroot_response.json())
